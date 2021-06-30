@@ -1,0 +1,9 @@
+
+@import "~ag-grid-community/dist/styles/ag-grid";
+@import '~ag-grid-community/dist/styles/ag-theme-material/sass/ag-theme-material-mixin';
+
+@mixin component($theme) {
+    .ag-theme-custom-angular {
+        @include ag-theme-material($theme);
+    }
+}

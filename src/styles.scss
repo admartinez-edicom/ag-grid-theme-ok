@@ -1,0 +1,34 @@
+@import "./app/app.component-theme";
+
+$default-theme: (
+  odd-row-background-color: #f2f8f2,
+  row-border-color: transparent,
+  row-hover-color: null,
+  checkbox-checked-color: #2661ad,
+  range-selection-border-color: #ff00b1,
+  range-selection-background-color: #03305633,
+);
+@include component($default-theme);
+
+.dark {
+  $theme: (
+    odd-row-background-color: #03305633,
+    row-border-color: transparent,
+    row-hover-color: null,
+    checkbox-checked-color: #2661ad,
+    range-selection-border-color: #ff00b1,
+    range-selection-background-color: #03305633,
+  );
+  @include component($theme);
+}
+
+html,
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
